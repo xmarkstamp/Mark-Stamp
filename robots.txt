@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://markstamp.com.br/sitemap.txt
