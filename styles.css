@@ -321,3 +321,59 @@ body{
   color:#fff;
   z-index:9999
 }
+
+/* ============================================================
+   AJUSTES FINAIS • MarkStamp
+   (adicione este bloco no final de styles.css)
+   ============================================================ */
+
+/* ===== 1) Logo maior no cabeçalho =====
+   Aumenta a altura mínima do header e o tamanho da logo
+   em desktop e mobile para dar mais destaque à marca.
+*/
+.header-grid {
+  min-height: 96px;   /* antes era 84px */
+}
+.brand img {
+  height: 72px;       /* antes era 52px */
+}
+@media (max-width: 900px){
+  .brand img { height: 60px; }
+  .header-grid { min-height: 86px; }
+}
+
+/* ===== 2) Imagens nos CARDS e CASES =====
+   Impede que as imagens “estourem” dentro dos balões.
+   Escolha entre object-fit: contain (não corta) ou cover (preenche).
+   Abaixo está a combinação recomendada:
+      - Serviços (cards) mostram a imagem inteira (contain)
+      - Cases de sucesso preenchem o espaço (cover)
+*/
+
+/* --- Cards de serviços: imagem inteira, sem corte --- */
+.card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+  object-fit: contain;        /* mostra a imagem completa */
+  background: #0b1220;        /* fundo neutro */
+  padding: 8px;               /* espaço interno */
+  border-radius: 12px;
+}
+
+/* --- Cases de sucesso: estilo banner, cobre todo o espaço --- */
+.case img {
+  width: 100%;
+  height: 220px;              /* altura fixa para manter padrão */
+  object-fit: cover;          /* preenche cortando sobras */
+  border-radius: 12px;
+}
+
+/* ===== 3) Hero Art (imagem principal) =====
+   Limita a largura máxima em telas muito grandes.
+*/
+.hero-art img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+}
