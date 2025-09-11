@@ -4,43 +4,66 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MarkStamp — Sites Profissionais & Tráfego Pago</title>
-  <meta name="description" content="Agência MarkStamp: sites profissionais, gestão de tráfego Google e Meta Ads, social media e SEO. Foco em leads, vendas e crescimento sustentável.">
+  <meta name="description" content="Agência MarkStamp: sites profissionais, gestão de tráfego, social media e SEO. Foco em leads, vendas e crescimento sustentável.">
   <link rel="canonical" href="https://markstamp.com.br/">
   <meta name="theme-color" content="#0b111d">
   <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="MarkStamp — Sites Profissionais & Tráfego Pago">
   <meta property="og:description" content="Resultados reais com design, performance e dados.">
-  <meta property="og:image" content="assets/ima.png">
+  <meta property="og:image" content="assets/banner.png">
   <meta property="og:url" content="https://markstamp.com.br/">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="MarkStamp — Sites Profissionais & Tráfego Pago">
   <meta name="twitter:description" content="Sua marca com mais cliques, leads e vendas.">
-  <meta name="twitter:image" content="assets/ima.png">
+  <meta name="twitter:image" content="assets/banner.png">
+
+  <!-- Fonts & CSS/JS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
-  <script defer src="main.js?v=4"></script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "MarkStamp", "url": "https://markstamp.com.br", "slogan": "O Seu Sucesso é a Nossa Meta", "logo": "assets/logo.png", "sameAs": ["https://instagram.com/markstamp_", "https://wa.me/5561981254726"], "contactPoint": [{"@type": "ContactPoint", "telephone": "+55 61 98125-4726", "contactType": "customer service", "areaServed": "BR", "availableLanguage": ["Portuguese", "English"]}]}</script>
+  <link rel="stylesheet" href="css/styles.css?v=5">
+  <script defer src="js/main.js?v=5"></script>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"MarkStamp",
+    "url":"https://markstamp.com.br",
+    "slogan":"O Seu Sucesso é a Nossa Meta",
+    "logo":"assets/logo.png",
+    "sameAs":["https://instagram.com/markstamp_","https://wa.me/5561981254726"],
+    "contactPoint":[{"@type":"ContactPoint","telephone":"+55 61 98125-4726","contactType":"customer service","areaServed":"BR","availableLanguage":["Portuguese","English"]}]
+  }</script>
 </head>
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== HEADER ===== -->
   <header class="header" id="topo" role="banner" aria-label="Cabeçalho">
     <div class="container header-grid">
       <a class="brand" href="#topo" aria-label="Página inicial">
         <img src="assets/logo.png" alt="MarkStamp">
       </a>
-      <button class="hamb" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+
+      <button class="hamb" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
       <nav id="menu" class="menu-wrap" role="navigation" aria-label="Principal">
         <ul class="menu">
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#cases">Cases</a></li>
           <li><a href="#sobre">Por que nós</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#contato" class="menu-cta">Orçamento</a></li>
         </ul>
       </nav>
+
       <div class="actions">
         <a class="btn primary whatsapp" data-wa href="#">WhatsApp</a>
         <a class="btn ghost ligar" href="https://instagram.com/markstamp_" target="_blank" rel="noopener">Instagram</a>
@@ -49,6 +72,7 @@
   </header>
 
   <main id="conteudo">
+    <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
@@ -59,17 +83,18 @@
             <a class="btn ghost" href="#contato">Solicitar Orçamento</a>
           </div>
           <ul class="badges">
-            <li class="badge">Resposta em até 1h</li>
             <li class="badge">+50 projetos</li>
             <li class="badge">Transparência total</li>
           </ul>
         </div>
+
         <a class="hero-art parallax wa" href="#" data-wa aria-label="Falar no WhatsApp">
-          <img src="assets/ima.png" alt="Crescimento com Google Ads e SEO">
+          <img src="assets/banner.png" alt="Crescimento com tráfego e SEO">
         </a>
       </div>
     </section>
 
+    <!-- ===== SERVIÇOS ===== -->
     <section id="servicos" class="section">
       <div class="container">
         <header class="section-head">
@@ -79,21 +104,21 @@
 
         <div class="cards" role="list">
           <article class="card tilt wa" role="listitem" data-wa>
-            <img src="assets/google.png" alt="Gestão de Tráfego Google & Meta Ads">
+            <img src="assets/google.png" alt="Gestão de Tráfego Pago">
             <h3>Tráfego Pago</h3>
-            <p>Campanhas de performance (Google/Meta) com foco em ligações, formulários e WhatsApp.</p>
+            <p>Campanhas de performance com foco em ligações, formulários e WhatsApp.</p>
             <button class="chip">Falar sobre campanhas</button>
           </article>
 
           <article class="card tilt wa" role="listitem" data-wa>
-            <img src="assets/ima.png" alt="Sites profissionais com SEO">
+            <img src="assets/site.png" alt="Sites profissionais com SEO">
             <h3>Sites Profissionais</h3>
             <p>Arquitetura, UX e SEO on-page. Velocidade, acessibilidade e páginas que vendem.</p>
             <button class="chip">Quero meu site</button>
           </article>
 
           <article class="card tilt wa" role="listitem" data-wa>
-            <img src="assets/rede.png" alt="Redes sociais e conteúdo">
+            <img src="assets/social.png" alt="Redes Sociais e conteúdo">
             <h3>Redes Sociais</h3>
             <p>Calendário editorial, criativos e métricas. Conteúdo que atrai, engaja e converte.</p>
             <button class="chip">Planejar conteúdo</button>
@@ -102,6 +127,47 @@
       </div>
     </section>
 
+    <!-- ===== TEXTO ORGANIZADO (do carrossel) ===== -->
+    <section class="section alt" id="servicos-detalhados">
+      <div class="container service-list">
+        <article>
+          <h3>Planejamento de Mídia</h3>
+          <p>Estratégias personalizadas para o seu orçamento e objetivos. Negociamos com veículos, monitoramos cada etapa e garantimos veiculação eficaz.</p>
+        </article>
+
+        <article>
+          <h3>Blog e Produção de Textos</h3>
+          <p>Blogs e artigos <strong>SEO-friendly</strong> para site, redes e peças publicitárias. Conteúdo estratégico para atrair leads e impulsionar seu posicionamento.</p>
+        </article>
+
+        <article>
+          <h3>Campanhas Publicitárias</h3>
+          <p>Planejamento e execução de campanhas de alto impacto. Geramos reconhecimento de marca, leads e crescimento em vendas.</p>
+        </article>
+
+        <article>
+          <h3>Gerenciamento de Redes Sociais</h3>
+          <p>Estudo de tendências, identidade visual, hashtags e análise de concorrência. Profissionalizamos suas redes para engajar e fidelizar.</p>
+        </article>
+
+        <article>
+          <h3>Identidade Visual</h3>
+          <p>Do logotipo à aplicação em embalagens, uniformes e frota. Padrão visual forte e memorável para sua marca.</p>
+        </article>
+
+        <article>
+          <h3>Campanhas em Redes Sociais</h3>
+          <p>Estratégias certeiras para alto engajamento nos principais canais. Encontramos seu público e ampliamos resultados.</p>
+        </article>
+
+        <article>
+          <h3>Anúncios no Google</h3>
+          <p>Seja encontrado no momento da busca. Trabalhamos com Search, Shopping, Maps, Remarketing e Display para cliques qualificados e conversões.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CASES ===== -->
     <section id="cases" class="section alt">
       <div class="container">
         <header class="section-head">
@@ -111,53 +177,92 @@
 
         <div class="cases">
           <article class="case parallax wa" data-wa>
-            <img src="assets/apresentacao.jpg" alt="Apresentação de resultados">
+            <img src="assets/ligacoes.png" alt="Aumento de ligações">
             <div class="case-info">
               <h3>+120% em ligações</h3>
-              <p>Otimização de Google Ads com segmentação local, extensões e landing focada em WhatsApp.</p>
+              <p>Otimização de anúncios com segmentação local, extensões e landing focada em WhatsApp.</p>
             </div>
           </article>
 
           <article class="case parallax wa" data-wa>
-            <img src="assets/ima.png" alt="Gráfico de crescimento">
+            <img src="assets/perfomance.png" alt="Performance otimizada em 90 dias">
             <div class="case-info">
-              <h3>ROI 3x em 60 dias</h3>
-              <p>Integração de SEO + Social + Ads com CRO e testes A/B no funil.</p>
+              <h3>Resultados mensuráveis em 90 dias</h3>
+              <p>SEO, Social e Ads alinhados com CRO e A/B testing para otimizar cada etapa do funil.</p>
             </div>
           </article>
 
           <article class="case parallax wa" data-wa>
-            <img src="assets/rede.png" alt="Engajamento em redes">
+            <img src="assets/engajamento.png" alt="Engajamento nas redes">
             <div class="case-info">
-              <h3>Engajamento 2,4x</h3>
-              <p>Estratégia de conteúdo, social ads e automações de atendimento.</p>
+              <h3>Engajamento 2.4x</h3>
+              <p>Conteúdo estratégico, social ads e automações de atendimento.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- ===== SOBRE (POR QUE NÓS) ===== -->
     <section id="sobre" class="section">
       <div class="container about">
         <div>
           <h2>Por que escolher a <span class="tone">MarkStamp</span>?</h2>
           <ul class="about-list">
-            <li>Estratégias criadas por designers, mídia e dev — juntos.</li>
-            <li>Transparência: relatórios claros e rituais semanais.</li>
-            <li>Entrega ágil com foco em metas e ROI.</li>
+            <li><strong>Estratégia integrada:</strong> designers, profissionais de mídia e desenvolvedores atuando juntos para soluções completas.</li>
+            <li><strong>Fortalecimento da sua marca:</strong> aumente sua presença online e seja encontrado no Google com estratégias de SEO e marketing de alta performance.</li>
+            <li><strong>Transparência contínua:</strong> relatórios claros e comunicação aberta em todas as etapas.</li>
+            <li><strong>Foco em resultados:</strong> entregas ágeis, metas bem definidas e ROI como prioridade.</li>
           </ul>
           <div class="stats">
             <div class="stat"><strong>+50</strong><span>projetos</span></div>
             <div class="stat"><strong>+300%</strong><span>em conversões</span></div>
-            <div class="stat"><strong>1h</strong><span>pra responder</span></div>
           </div>
         </div>
+
         <div class="mock parallax">
-          <img src="assets/ima.png" alt="Dashboard e resultados">
+          <img src="assets/porque.png" alt="Ilustração de SEO, branding e crescimento">
         </div>
       </div>
     </section>
 
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section id="depoimentos" class="section testimonials alt">
+      <div class="container">
+        <header class="section-head">
+          <h2>O que dizem nossos clientes</h2>
+          <p>Parcerias que viram resultados.</p>
+        </header>
+
+        <div class="testi-grid">
+          <blockquote class="testi">
+            <p>“A MarkStamp organizou nosso funil e destravou as campanhas. Em poucas semanas, o custo por lead caiu e as ligações aumentaram muito.”</p>
+            <footer>
+              <strong>Gabriela M.</strong> — Clínica Odontológica
+              <span class="stars" aria-label="5 de 5">★★★★★</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testi">
+            <p>“O site novo ficou rápido, acessível e otimizado. Passamos a receber contatos qualificados direto pelo WhatsApp.”</p>
+            <footer>
+              <strong>Eduardo A.</strong> — Serviços Automotivos
+              <span class="stars" aria-label="5 de 5">★★★★★</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testi">
+            <p>“Conteúdo e social bem planejados. Crescemos em seguidores e, principalmente, em pedidos.”</p>
+            <footer>
+              <strong>Natália R.</strong> — E-commerce de Moda
+              <span class="stars" aria-label="5 de 5">★★★★★</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
     <section class="cta-final">
       <div class="container">
         <h2>Pronto para levar sua marca ao próximo nível?</h2>
@@ -165,11 +270,12 @@
       </div>
     </section>
 
+    <!-- ===== CONTATO ===== -->
     <section id="contato" class="section alt">
       <div class="container">
         <header class="section-head">
           <h2>Briefing rápido • Orçamento</h2>
-          <p>Conte um pouco do seu projeto. Voltamos em até 1h útil.</p>
+          <p>Conte um pouco do seu projeto. Retornamos em breve.</p>
         </header>
 
         <form id="msForm" class="form form-stack">
