@@ -410,3 +410,14 @@ body{
   padding: 8px;          /* pequeno respiro ao redor */
   border-radius: 12px;
 }
+/* ============================================================
+   Padronização de tamanho para TODAS as imagens dos Cases
+   ============================================================ */
+.case img {
+  width: 100%;
+  height: 280px;         /* altura fixa padrão para todos */
+  object-fit: contain;   /* mostra a arte completa sem cortar */
+  background: #0b1220;   /* fundo neutro nas bordas */
+  padding: 8px;          /* respiro interno */
+  border-radius: 12px;
+}
