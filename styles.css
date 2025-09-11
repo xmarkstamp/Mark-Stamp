@@ -377,3 +377,24 @@ body{
   max-width: 600px;
   border-radius: 16px;
 }
+/* ============================================================
+   MOBILE: Banner hero primeiro e em largura total
+   ============================================================ */
+@media (max-width: 900px) {
+  /* Reordena a grade: imagem antes do texto */
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-art {
+    order: -1;           /* faz a imagem vir antes do texto */
+    width: 100%;
+    margin-bottom: 20px; /* espaço entre o banner e o texto */
+  }
+  .hero-art img {
+    width: 100%;         /* ocupa toda a largura da tela */
+    height: auto;
+    max-height: none;    /* altura livre */
+    border-radius: 0;    /* sem cantos arredondados para full-width */
+  }
+}
