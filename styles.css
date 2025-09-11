@@ -421,3 +421,12 @@ body{
   padding: 8px;          /* respiro interno */
   border-radius: 12px;
 }
+/* ===== Ajuste das imagens dos cards O que Fazemos ===== */
+.cards .card img {
+  width: 100%;           /* ocupa toda a largura do card */
+  height: auto;          /* mantém a proporção original */
+  object-fit: cover;     /* garante cobertura completa sem distorcer */
+  border-radius: 10px;   /* mantém o arredondamento existente */
+  display: block;        /* evita espaçamento extra */
+}
+
