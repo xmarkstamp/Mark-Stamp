@@ -398,3 +398,15 @@ body{
     border-radius: 0;    /* sem cantos arredondados para full-width */
   }
 }
+
+/* ============================================================
+   Ajuste: Mostrar imagem de Performance sem cortes
+   ============================================================ */
+.case img[src*="perfomance"] {
+  width: 100%;
+  height: auto;          /* altura automática para manter proporção */
+  object-fit: contain;   /* mostra a arte completa, mesmo que sobrem bordas */
+  background: #0b1220;   /* fundo neutro para as bordas que sobrarem */
+  padding: 8px;          /* pequeno respiro ao redor */
+  border-radius: 12px;
+}
