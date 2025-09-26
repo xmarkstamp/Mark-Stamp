@@ -170,6 +170,17 @@ body{
 .case-info{padding:14px}
 .case-info h3{margin:0 0 6px;font-weight:800}
 
+
+/* === Ajuste para imagens de Cases de Sucesso === */
+.case img {
+  height: auto;       /* remove a altura fixa de 180px */
+  width: 100%;        /* garante largura total do card */
+  object-fit: cover;  /* mantém o enquadramento sem distorcer */
+}
+
+
+
+
 /* ===== SOBRE ===== */
 .about{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
 @media (max-width:900px){.about{grid-template-columns:1fr}}
