@@ -430,3 +430,58 @@ body{
   display: block;        /* evita espaçamento extra */
 }
 
+
+
+
+
+/* === HERO FULL-BLEED MOBILE + MAIOR NO DESKTOP (sem editar HTML) === */
+
+/* Alvo genérico do banner do hero.
+   Ajuste os seletores se você já tiver .hero/.banner. */
+.hero img,
+section:first-of-type img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* MOBILE: encostar nas bordas (full-bleed) e aproximar do título */
+@media (max-width: 767px) {
+  .hero img,
+  section:first-of-type img {
+    /* ocupa toda a largura da viewport mesmo que o container tenha padding */
+    width: 100vw;
+    max-width: 100vw;
+    height: clamp(220px, 40vh, 520px);
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    /* truque para “sair” do padding do container e encostar nas bordas */
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    /* encosta o banner no título abaixo */
+    margin-bottom: 8px; /* ajuste fino se precisar */
+  }
+
+  /* remove respiro extra do bloco do hero se existir */
+  .hero, section:first-of-type {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* DESKTOP: maior, mas preservando o layout atual */
+@media (min-width: 768px) {
+  .hero img,
+  section:first-of-type img {
+    /* cresce um pouco sem exagero */
+    width: min(92vw, 1200px);
+    aspect-ratio: 16 / 9;
+    max-height: 58vh;
+    object-fit: cover;
+    object-position: center;
+    /* centraliza dentro do container */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
